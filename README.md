@@ -16,7 +16,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/eha-africa-cohort-6-software-development.git
+git clone https://github.com/lohochris/eha-africa-cohort-6-software-development.git
 Navigate to the Project Folder:
 
 bash
