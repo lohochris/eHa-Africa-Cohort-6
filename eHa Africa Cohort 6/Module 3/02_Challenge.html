@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <p>Enter your mark below to calculate your grade:</p>
+    <input type="number" id="mark" placeholder="Enter mark (0-100)" />
+    <button onclick="displayGrade()">Calculate Grade</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateGrade(mark) {
+            if (mark >= 70 && mark <= 100) {
+                return 'A';
+            } else if (mark >= 50 && mark <= 60) {
+                return 'C';
+            } else if (mark >= 0 && mark <= 40) {
+                return 'F';
+            } else {
+                return 'Invalid Mark';
+            }
+        }
+
+
+        function displayGrade() {
+            const mark = parseInt(document.getElementById("mark").value, 10);
+            const resultElement = document.getElementById("result");
+            if (isNaN(mark)) {
+                resultElement.textContent = "Please enter a valid number.";
+            } else {
+                const grade = calculateGrade(mark);
+                resultElement.textContent = `The grade for a mark of ${mark} is: ${grade}`;
+            }
+        }
+    </script>
+</body>
+</html>
