@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #444;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px auto;
+            color: #555;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change a Webpage Color</h1>
+    <p>Click the button below to make the background more vibrant!</p>
+    <button onclick="changeBackgroundColor()">Change to Blue</button>
+    <footer>Designed with ❤️ for a dynamic experience!</footer>
+
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "#fff"; // Adjust text color for contrast
+        }
+    </script>
+</body>
+</html>

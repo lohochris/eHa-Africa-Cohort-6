@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Array Example</title>
+</head>
+<body>
+    <h1>Cars Listing</h1>
+    <p>Open the console to see the output.</p>
+    
+    <script>
+        // Define the array named cars with the specified items
+        let cars = ["toyota", "honda", "mazda", "mitsubishi", "tesla", "lexus"];
+
+        // Log the first item to the console
+        console.log("First item:", cars[0]);
+
+        // Log the last item using the length property
+        console.log("Last item:", cars[cars.length - 1]);
+
+        // Add 'mercedes-benz' to the array
+        cars.push("mercedes-benz");
+        console.log("Array after adding 'mercedes-benz':", cars);
+
+        // Loop through all items in the array and log them
+        console.log("All items in the array:");
+        cars.forEach(car => console.log(car));
+    </script>
+</body>
+</html>
